@@ -17,9 +17,9 @@ cognomi.sort();
 
 //stampare la lista
 for(i = 0; i < cognomi.length; i++){
-    document.getElementById('lista-cognomi').innerHTML += '<li>' + cognomi[i] + ' è di indice ' + (i + 1) + '</li>';
+    document.getElementById('lista-cognomi').innerHTML += '<li>' + cognomi[i] + '</li>';
 }
 
 // posizione cognomeUtente nel array
 var posizione = cognomi.indexOf(capitalize) + 1;
-console.log(posizione);
+document.getElementById('posizione').innerHTML = 'la tua posizione è ' + posizione;
